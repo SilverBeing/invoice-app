@@ -20,21 +20,21 @@ export default function Navbar() {
 		changeTheme((lightMode) => (lightMode ? themes.light : themes.dark));
 	};
 	return (
-		<div className="md:h-full h-[90px]  min-w-[100px] justify-between  flex md:block  z-30 bg-[#1e2139] w-[100%] md:w-[5%] md:rounded-tr-[20px] md:rounded-br-[20px] md:fixed top-0 left-0">
-			<div className=" relative isolate z-30 w-[20%] md:w-full ">
+		<div className="min-[850px]:h-full h-[90px]  min-w-[100px] justify-between  flex min-[850px]:block  z-30 bg-[#1e2139] max-[820px]:w-[100%] min-[850px]:w-[5%] min-[850px]:rounded-tr-[20px] min-[850px]:rounded-br-[20px] min-[850px]:fixed top-0 left-0">
+			<div className=" relative isolate z-30 w-[20%] min-[850px]:w-full ">
 				<div
-					className="w-full md:w-full isolate before:z-[-1] before:contents-[''] 
-				before:absolute before:w-full   before:md:w-full before:bottom-0 before:h-1/2
+					className="w-full min-[850px]:w-full isolate before:z-[-1] before:contents-[''] 
+				before:absolute before:w-full   before:min-[850px]:w-full before:bottom-0 before:h-1/2
 				before:rounded-tl-[30px]  before:bg-[#9277FF]
 				bg-[#7C5DFA] flex justify-center items-center h-[90px]
 				rounded-tr-[20px] rounded-br-[20px]">
 					<Image src={logo} alt="logo" />
 				</div>
 			</div>
-			<div className=" flex gap-5 md:block items-center relative w-[40%]  md:w-full h-full ">
-				<div className="md:absolute left-0 z-30 w-[45%] md:w-[100%]  text-black md:bottom-[200px]">
+			<div className=" flex gap-5 min-[850px]:block items-center relative w-[40%]  min-[850px]:w-full h-full ">
+				<div className="min-[850px]:absolute left-0 z-30 w-[45%] min-[850px]:w-[100%]  text-black min-[850px]:bottom-[200px]">
 					<button
-						className="text-center mx-auto md:border-b border-b-[#494E6E] py-[30px] w-full"
+						className="text-center mx-auto min-[850px]:border-b border-b-[#494E6E] py-[30px] w-full"
 						onClick={handleTheme}>
 						{lightMode ? (
 							<BsFillCloudSunFill
@@ -47,7 +47,7 @@ export default function Navbar() {
 						)}
 					</button>
 				</div>
-				<div className="md:w-[50px] w-[20%]  md:absolute md:bottom-[120px] md:left-[50%] md:translate-x-[-50%]">
+				<div className="min-[850px]:w-[50px] w-[20%]  min-[850px]:absolute min-[850px]:bottom-[120px] min-[850px]:left-[50%] min-[850px]:translate-x-[-50%]">
 					<button className="w-full" onClick={() => setView(true)}>
 						<Image
 							src={silver}

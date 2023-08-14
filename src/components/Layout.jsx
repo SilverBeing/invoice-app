@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Layout({ children }) {
 	const router = useRouter();
 	return (
-		<div className="flex flex-col md:flex-row  w-full h-[100vh] overflow-y-scroll remove-scrollbar bg-[var(--primary-bg-color)]">
+		<div className="flex flex-col min-[850px]:flex-row  w-full h-[100vh] overflow-y-scroll remove-scrollbar bg-[var(--primary-bg-color)]">
 			<Navbar />
 
 			<AnimatePresence mode="wait">
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 					animate={{ y: 0, opacity: 1 }}
 					variants={{ delay: 0.4 }}
 					exit={{ y: -300, opacity: 0 }}
-					className="w-[95%] md:w-[45%] mx-auto my-auto ">
+					className="max-[800px]:w-[95%]  min-[850px]:w-[45%] mx-auto my-auto ">
 					{children}
 				</motion.div>
 			</AnimatePresence>

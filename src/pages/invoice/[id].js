@@ -28,7 +28,7 @@ export default function Index() {
 	return (
 		<>
 			{result && (
-				<div className="w=[95%] md:w-[90%] mx-auto">
+				<div className="w-[95%]  md:w-[90%] mx-auto">
 					<div>
 						<button
 							className="text-[#9277FF] items-center gap-3 text-[14px] inline-flex p-3 "
@@ -68,7 +68,7 @@ export default function Index() {
 								</p>
 							</div>
 						</div>
-						<div className="flex gap-2 mt-4 md:mt-0 ">
+						<div className="flex justify-between md:justify-start w-full md:w-auto gap-2 mt-4 md:mt-0 ">
 							<button
 								onClick={handleEdit}
 								className="rounded-[10px] md:rounded-[30px]  text-[14px] font-semibold text-white py-3 px-6 bg-[#363b53]">
@@ -125,7 +125,7 @@ export default function Index() {
 									</h3>
 								</div>
 							</div>
-							<div>
+							<div className="justify-self-end md:justify-self-start text-right md:text-left">
 								<p className="text-[var(--input-label-color)] text-[14px]">
 									{" "}
 									Bill To

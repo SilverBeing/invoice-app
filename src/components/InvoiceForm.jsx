@@ -152,7 +152,7 @@ export default function InvoiceForm({ edit, hide }) {
 				<Items />
 			</form>
 			{!edit ? (
-				<div className="flex justify-between w-full items-center absolute bottom-3 md:bottom-8 right-0 px-5 md:px-11">
+				<div className="flex justify-between w-full items-center absolute bottom-5 md:bottom-8 right-0 px-5 md:px-11">
 					<div>
 						<button
 							onClick={hide}
@@ -175,7 +175,7 @@ export default function InvoiceForm({ edit, hide }) {
 				</div>
 			)
 		: (
-				<div className="w-full absolute bottom-3 md:bottom-8  px-5 md:px-11 right-0">
+				<div className="w-full absolute bottom-5 md:bottom-8  px-5 md:px-11 right-0">
 					<div className="md:float-right">
 						<button
 							onClick={hide}
