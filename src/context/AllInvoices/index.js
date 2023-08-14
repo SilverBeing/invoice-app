@@ -26,9 +26,9 @@ const AllInvoicesProvider = ({ children }) => {
 	const addInvoice = (invoice) => {
 		window.localStorage.setItem(
 			"invoices",
-			JSON.stringify([...allInvoices, invoice])
+			JSON.stringify([ invoice, ...allInvoices,])
 		);
-		setAllInvoices([...allInvoices, invoice]);
+		setAllInvoices([invoice, ...allInvoices, ]);
 	};
 	const changeStatus = (id) => {
 		const newData = allInvoices.map((invoice) => {

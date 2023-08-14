@@ -8,7 +8,8 @@ import { useEffect, useState } from "react";
 export default function Home() {
 	const { allInvoices } = useAllInvoice();
 	const [invoices, setInvoices] = useState();
-	const sortedInvoices = allInvoices?.sort((a, b) => a.createdAt - b.createdAt);
+	const sortedInvoices = allInvoices?.sort((a, b) => b.createdAt - a.createdAt);
+	console.log(sortedInvoices)
 	useEffect(() => {
 		setInvoices(sortedInvoices);
 	}, [sortedInvoices]);
